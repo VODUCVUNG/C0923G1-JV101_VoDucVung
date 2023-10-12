@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Số ngày trong tháng</title>
 </head>
 <body>
-$END$
+<script>
+    let month = +prompt("Nhập tháng: ");
+    if (month >= 1 && month <= 12 && parseInt(month) === month) {
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert(`thang${month} có 31 ngày`);
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert(`thang${month}có 30 ngày `);
+                break;
+            case 2:
+                let year = +prompt("Hãy nhập năm:");
+                if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+                    alert("Tháng 2 có 29 ngày");
+                } else {
+                    alert("Tháng 2 có 28 ngày");
+                }
+        }
+    }else {
+        alert("Người nhập sai định dạng");
+    }
+
+
+</script>
+
 </body>
 </html>

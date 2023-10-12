@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let thuNhap = +prompt("Nhập số thu nhập của bạn(VND) ");
+    let tienThue;
+    if (thuNhap >= 50) {
+        tienThue = 0.2 * thuNhap;
+    } else if (thuNhap >= 20) {
+        tienThue = 0.15 * thuNhap;
+    } else if (thuNhap >= 10) {
+        tienThue = 0.1 * thuNhap;
+    } else if (thuNhap >= 0) {
+        tienThue = 0.05 * thuNhap;
+    } else {
+        alert("Hãy nhập đúng dữ liệu");
+    }
+    document.write("Tổng số thuế dựa trên thu nhập là: "+ tienThue + " VND")
+</script>
+</body>
+</html>

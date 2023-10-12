@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+<script>
+    let a =+prompt("Nhập số điện bạn đã dùng");
+    let phiDien;
+    if (a >100){
+        phiDien =(a-100)*3000 + 145000;
+    }else if (a>50){
+        phiDien=(a-50)*2000+45000;
+    }else if (a>10){
+       phiDien = a*500;
+    }else {
+        alert("Hãy nhập lại")
+    }
+    document.write("Tiền phí sữ dụng điện là: "+ phiDien+"VND");
+</script>
+</body>
+</html>

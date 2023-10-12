@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank interest calculation program</title>
+</head>
+<body>
+<script>
+    let tienCoc = +prompt("Nhập số tiền bạn muốn gửi (VND)");
+    let month = parseInt(prompt("Bạn muốn gửi trong bao nhiêu tháng"));
+    let laiSuat = +prompt("Nhập lãi suất tháng");
+    let tienNhan = tienCoc * Math.pow((1 + laiSuat / 100), month);
+    if (tienCoc >= 0 && month > 0 && laiSuat) {
+        document.write("số tiền bạn nhận đc sau " + month + " tháng là: " + tienNhan + " VND");
+    } else {
+        alert("Hãy nhập đúng dữ liệu");
+    }
+
+</script>
+</body>
+</html>
