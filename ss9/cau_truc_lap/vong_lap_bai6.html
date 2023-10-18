@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 30 số đầu chia hết cho 7</title>
+
+</head>
+<body>
+<script>
+    let count = 0, sum =0
+    let num =""
+    let i
+    for ( i =1; ; i++){
+        if(i%7==0){
+            num += i+" "
+            console.log(num)
+            sum += i
+            count++
+            if(count==30) break
+        }
+    }
+    document.write(num+"<br>")
+</script>
+</body>
+</html>

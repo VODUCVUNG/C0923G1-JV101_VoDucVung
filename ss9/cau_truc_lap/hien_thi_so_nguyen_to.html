@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show prime numbers</title>
+</head>
+<body>
+<script>
+    let numberOfPrime = +prompt("Nhập số n nguyên tố đầu tiên");
+    let count = 0;
+    let num = 2;
+    while (count < numberOfPrime) {
+        let countOfDivisor = 0;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                countOfDivisor++;
+                break;
+            }
+        }
+        if (countOfDivisor === 0) {
+            document.write(num + "<br>");
+            count++;
+        }
+        num++;
+    }
+</script>
+</body>
+</html>
