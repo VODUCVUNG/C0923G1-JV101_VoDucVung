@@ -1,19 +1,19 @@
-function trans(){
-    //orange
+function transcript(){
     let eng = ["car","dog","house","frien","party","gun","music","jump","good vibes"];
     let vn = ["xe","chó","nhà","bạn bè","buổi tiệc","súng","âm nhạc","nhảy","rung cảm tốt"];
     let string = document.getElementById("string").value;
-    let index_eng = 0;
-    let result = "";
-    for (let i = 0; i < eng.length; i++) {
-        if (string === eng[i]) {
-            index_eng = i; 2
-            for (let j = 0; j < vn.length; j++) {
-                if (index_eng === j) {
-                    result = vn[j];
-                }
+    let sizeEng = eng.length
+    let indexOfVn;
+    let count = 0;
+    for (let i = 0; i < sizeEng; i++) {
+        if (eng[i]===string) {
+            indexOfVn = i;
+            count++;
+            break;
             }
         }
+    if (count ===1) {
+        document.getElementById("result").innerHTML = vn[indexOfVn];
+    }else {
     }
-    document.getElementById("result").innerHTML = result;
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let lengthOfarray = +parseInt(prompt("Nhập độ dài của mảng"));
+    for (let i = 0; i < lengthOfarray; i++) {
+        array[i] = +parseInt(prompt("Nhập phần tử thứ " + i));
+    }
+    let swapValue;
+    for (let i = 0; i < lengthOfarray /2; i++) {
+        swapValue = array[i];
+        array[i] = array[lengthOfarray-1-i];
+        array[lengthOfarray-1-i]= swapValue;
+    }
+    document.write(array)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let lengthOfarray = +prompt("Nhập phần tử muốn khởi tạo");
+    let sum = 0;
+    for ( let i = 0 ; i < lengthOfarray; i++) {
+        array[i] = +prompt("Nhập giá trị lần thứ "+i);
+    }
+    let max = array[0]
+    for ( let i = 0 ; i < array.length; i ++) {
+        if (max < array[i]) {
+            max = array[i]
+        }
+        sum += array [i];
+    }
+    document.write("Giá trị lớn nhất trong mảng đó là:  " +max +"");
+    document.write("Giá trị trung bình của các phần tử đó là: "+ (sum/array.length));
+
+</script>
+</body>
+</html>
