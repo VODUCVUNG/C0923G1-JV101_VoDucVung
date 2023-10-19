@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Counts the number of vowels within a string</title>
 </head>
 <body>
 <script>
     let array = [];
-    let lengthOfArray = parseInt(prompt("Nhấp số phần tử muốn khởi tạo"));
-    let count = 0;
-    for (let i = 0; i < lengthOfArray; i++) {
+    let lengthOfarray = parseInt(prompt("Nhấp số phần tử muốn khởi tạo"));
+    let max = 0;
+    for (let i = 0; i < lengthOfarray; i++) {
         array[i] = +prompt("Nhập giá trị phần tử thứ " + i);
     }
-    for(let i = 0; i < array.length; i++) {
-        if(array[i] < 0 && parseInt(array[i]) === array[i]) {
-            count++
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 0 && parseInt(array[i]) === array[i]) {
+            max++
         }
     }
-    document.write("Có tổng cộng " + count + " số nguyên âm");
+    document.write("Có tổng " + max + "số nguyên âm ");
 </script>
 </body>
 </html>

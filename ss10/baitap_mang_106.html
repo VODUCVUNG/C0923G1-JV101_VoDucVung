@@ -5,6 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let array = [];
+    let max = 0;
+    for ( let i = 0; i < 10; i++){
+        array[i] = +parseInt(prompt("nhập giá trị phần tử thứ " + i));
+    }
+    let v = +parseInt(prompt("Nhập số nguyên v"));
+    for (let i = 0; i < array.length; i++) {
+        if (v === array[i]){
+            max = 1;
+        }
+    }
+    if (max === 1){
+        document.write("v is in the array");
+    }else {
+        document.write("v is not in the array");
+    }
+</script>
 </body>
 </html>

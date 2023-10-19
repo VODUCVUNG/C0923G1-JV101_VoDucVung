@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let array = [];
+    for (let i = 0; i < 4; i++) {
+        array[i] = parseInt(prompt(" Nhập phần tử thứ " + i));
+    }
+    document.write("Mảng ban đầu là: " + array + "<br>");
+    let numV = parseInt(prompt("Nhập số nguyên V"));
+    for (let i = 0; i < 4; i++) {
+        if (array[i] === numV) {
+            for (let j = i; j < array.length - 1; j++) {
+                array[j] = array[j + 1];
+            }
+            array[array.length - 1] = 0;
+        }
+    }
+    document.write("Mảng đã xóa số nguyên V là: " + array);
+</script>
 </body>
 </html>
