@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let lenghtOfarray = parseInt(prompt("Nhập kích thước mảng"));
+    for (let i = 0; i < lenghtOfarray; i++) {
+        array [i] = prompt("Nhập phần tử " + i)
+    }
+    for (let i = 0; i < lenghtOfarray; i++) {
+        if (array[i] === "-") {
+            array[i] = "_";
+        }
+    }
+    document.write(array)
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayA =[];
+    for (let i = 0 ; i < 10; i++){
+        arrayA[i] = parseInt(prompt("Nhập số nguyên A " + i));
+    }
+    let arrayB = [];
+    for (let i = 0 ; i <10; i++){
+        arrayB[i] = parseInt(prompt("Nhập số nguyên B "+i));
+    }
+    let arrC = [];
+    for (let i = 0 ; i < 10 ; i++) {
+            arrC[i] = arrayA[i];
+        }
+        for (let j = 0; j < 10; j++) {
+            arrC[j + 10] = arrayB[j]
+    }
+    document.write(arrC)
+</script>
+</body>
+</html>

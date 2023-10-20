@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let lengOfArray = +parseInt(prompt("Nhập kích thước mảng"))
+    for (let i = 0; i < lengOfArray; i++) {
+        array[i] = prompt("Nhập mảng")
+    }
+    let count = 0
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === '' && array[i + 1] !== '') ;
+        count++;
+    }
+    document.write(count)
+</script>
+</body>
+</html>

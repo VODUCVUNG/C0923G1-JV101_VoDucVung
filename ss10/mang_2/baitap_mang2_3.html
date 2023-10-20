@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = []
+    let lengthOfArray = +parseInt(prompt("Nhập kích thước của mảng"));
+    let count = [];
+    for (let i = 0; i < lengthOfArray; i++) {
+        array[i] = prompt("Nhập giá trị phần tử thứ " + i);
+    }
+    for (let i = 0; i < lengthOfArray; i++) {
+        if (!isNaN(parseInt(array[i]))) {
+            count++;
+        }
+    }
+    document.write("Có " + count + " ký tự số trong mảng");
+</script>
+</body>
+</html>
