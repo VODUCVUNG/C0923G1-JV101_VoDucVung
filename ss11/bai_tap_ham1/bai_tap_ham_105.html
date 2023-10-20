@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Stars</title>
+</head>
+<body>
+<script>
+    let star1st =["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let constellation =["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    let star = prompt("Nhập tên ngôi sao");
+    let notFind;
+    function findConstellation (star){
+        for (let i = 0; i < star1st.length; i++){
+            if (star1st[i] === star){
+                return constellation[i];
+            }
+        }
+        notFind= "Không sao";
+        return notFind;
+    }
+    document.write(findConstellation(star))
+</script>
+</body>
+</html>

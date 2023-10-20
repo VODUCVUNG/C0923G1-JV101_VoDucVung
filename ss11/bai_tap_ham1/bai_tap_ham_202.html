@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let radius = +prompt("Nhập bán kính hình tròn");
+    let acreage = circleArea()
+    function circleArea() {
+        return radius * radius * 3.14;
+    }
+
+    function diameterOfCircle() {
+        return radius * 2 * 3.14;
+    }
+    alert(" Diện tích hình tròn là " + acreage)
+    let perimeter = diameterOfCircle()
+    alert( "Chu vi hình tròn là " + perimeter)
+</script>
+</body>
+</html>
