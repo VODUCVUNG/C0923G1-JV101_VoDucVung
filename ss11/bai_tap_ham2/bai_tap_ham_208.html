@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let array =[];
+    let lengthOfarray = +parseInt(prompt("Nhập kích thước mảng"));
+    function reverseInteger(array) {
+        return array.reverse();
+    }
+    for (let i = 0; i< lengthOfarray; i++){
+        array[i]= prompt("Nhập số nguyên")
+    }
+    alert(reverseInteger(array))
+</script>
 </body>
 </html>

@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let result = 1;
+
+    function calculateFactorial(n) {
+        for (let i = 1; i <= n; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    let n = +prompt("Nhập số nguyên");
+    while  (parseInt(n) !== n){
+        alert("Hãy nhập lại");
+        n = +prompt("Nhập số nguyên");
+    }
+    document.write(calculateFactorial(n));
+</script>
 </body>
 </html>

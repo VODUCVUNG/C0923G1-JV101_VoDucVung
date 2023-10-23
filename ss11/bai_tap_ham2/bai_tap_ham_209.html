@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function checkCharecter() {
+        let check = 0;
+        let charecter = prompt("Nhập ký tự ");
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === charecter) {
+                check++;
+            }
+        }
+        if (check > 0) {
+            return check;
+        } else {
+            return -1;
+        }
+    }
+        let array = [];
+        let sizeOfArray = +parseInt(prompt("Nhập kích thước mảng "));
+        for ( let i = 0; i < sizeOfArray; i++){
+            array[i]=prompt("Nhập phần tử thứ "+i)
+        }
+    alert(checkCharecter());
+</script>
 </body>
 </html>
