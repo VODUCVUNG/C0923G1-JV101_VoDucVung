@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="rectangle" width="1000" height="1000"></canvas>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        getArea() {
+            return this.length * this.width;
+        }
+
+        getPerimeter() {
+            return (this.length + this.width) * 2;
+        }
+
+
+        changeDimensions(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+    }
+
+    let rectangle1 = new Rectangle(600, 300);
+    rectangle1.changeDimensions(300, 100);
+    alert(`Diện tích hcn là: ${rectangle1.getArea()}, Chu vi hcn là: ${rectangle1.getPerimeter()}`);
+</script>
+</body>
+</html>
