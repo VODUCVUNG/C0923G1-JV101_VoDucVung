@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let characters = prompt("Nhập ký tự cần kiểm tra: ");
+    switch (characters) {
+        case "o":
+        case "u":
+        case "i":
+        case "a":
+        case "e":
+        case "O":
+        case "U":
+        case "I":
+        case "A":
+        case "E":
+            alert("Ký tự bạn nhập là nguyên âm");
+            break;
+        default:
+            alert("Ký tự bạn nhập là phụ âm");
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary = +prompt("Nhập mức lương nhận được(m)");
+    let tax;
+    if (salary < 7) {
+        tax = salary * 0.05;
+    } else if (salary < 15) {
+        tax = salary * 0.1;
+    } else {
+        tax = salary * 0.2;
+    }
+    document.write("Thuế phải nộp là: " + tax + "m, lương ròng nhận được là: " + (salary - tax)+"m");
+</script>
+</body>
+</html>
