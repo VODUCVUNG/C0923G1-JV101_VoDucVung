@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("nhập xâu ký tự");
+    let result = chuanHoaXauKyTu(input);
+
+    function chuanHoaXauKyTu(input) {
+        if (typeof input !== 'string') {
+            return 'không phải ';
+        }
+
+        let xauDaChuanHoa = input.trim().replace("\\s+", " ");
+
+        xauDaChuanHoa = xauDaChuanHoa.toLowerCase().split(' ').map(function (tu) {
+            return tu.charAt(0).toUpperCase() + tu.slice(1);
+        }).join(' ');
+
+        return xauDaChuanHoa;
+    }
+
+    document.write(result);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMinMax(arr) {
+        let min = arr[0][0];
+        let max = arr[0][0];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] < min) {
+                    min = arr[i][j];
+                }
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                }
+            }
+        }
+        return [min, max];
+    }
+
+    const arr = [[4, 5, 2], [3, 9, 8], [6, 1, 7]];
+    const [min, max] = findMinMax(arr);
+    document.write("Giá trị nhỏ nhất trong mảng 2 chiều là: " + min+"<br>");
+    document.write("Giá trị lớn nhất trong mảng 2 chiều là: " + max);
+</script>
+</body>
+</html>
