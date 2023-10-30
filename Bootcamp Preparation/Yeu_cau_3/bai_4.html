@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let drink = ["1 Cafe", "2 Cam vắt", "3 Nước ép cà rốt", "4 Nước ép cà chua", "5 Nước lọc", "6 Nước dừa", "7 Thoát gọi món"];
+    let price = [10, 20, 30, 40, 50, 60];
+    let list = "";
+    for (let i = 0; i < drink.length; i++) {
+        list += drink[i] + "<br>";
+    }
+    document.getElementById("list").innerHTML = list;
+    function orderDrink() {
+        let drink;
+        let quanity;
+        let total = 0;
+        do {
+            drink = +parseInt(prompt("Nhập đồ uống"));
+            if(drink === 7) {
+                continue;
+            }
+            alert("Đơn giá của đồ uống là: " + price[drink - 1]);
+            quanity = +parseInt(prompt("Nhập số lượng"));
+            total += price[drink - 1] * quanity;
+        } while (drink !== 7)
+        document.getElementById("total").innerHTML = "Tổng giá tiền là " + total;
+    }
+</script>
+</body>
+</html>
